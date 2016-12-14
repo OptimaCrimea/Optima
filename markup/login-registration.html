@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="robots" content="noindex, nofollow"/>
+    <meta charset="utf-8">
+    <title>Optima</title>
+    <link media="all" rel="stylesheet" href="css/styles.css">
+    <!-- <link media="all" rel="stylesheet" href="css/styles-test.css"> -->
+    <link media="all" rel="stylesheet" href="css/slick.css">
+    <link media="all" rel="stylesheet" href="css/owl.carousel.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic&amp;subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+    <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="js/jquery.main.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/slideBlock.js"></script>
+    <script type="text/javascript" src="js/open-close.js"></script>
+    <script type="text/javascript" src="js/tabs.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="js/select2.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.spinner.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.button.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.accordion.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.mouse.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.slider.js"></script>
+    <script type="text/javascript" src="js/jquery.inputmask.js"></script>
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+<a class="fancybox" href="#sign-in">Авторизация</a>
+<br/>
+<a class="fancybox" href="#registration">Регистрация</a>
+<br/>
+<a class="fancybox" href="#recover-password">Восстановление пароля</a>
+<br/>
+<div class="popup-holder">
+    <div id="sign-in" class="sign-in">
+        <h2>Вход / Регистрация</h2>
+        <form>
+            <label for="mob-tel">Мобильный телефон</label>
+            <div class="select-box tel">
+                <div class="slide-box lang">
+                    <span class="slide-link"><a class="ru" href="#"><img onclick="ru();" src="images/ico-rus.gif" width="32" height="25" alt=""></a></span>
+                    <ul class="slide-list">
+                        <li><a class="ua" href="#"><img onclick="ua();" src="images/ico-ukr.gif" width="32" height="25" alt=""></a></li>
+                    </ul>
+                </div>
+                <input id="mob-tel" type="text" placeholder="+7 (___) ___-__-__">
+                <a class="btn btn-green" href="">Войти</a>
+            </div>
+        </form>
+    </div>
+    <!--<div id="authorization" class="authorization">-->
+        <!--<h2>Авторизация</h2>-->
+        <!--<form>-->
+            <!--<label for="auth-pass">Ввод пароля</label>-->
+            <!--<input class="error-box" id="auth-pass" type="password"/>-->
+            <!--<span class="error-message">Пароль введен не верно, попробуйте еще раз</span>-->
+            <!--<a class="fancybox" href="#recover-password">Восстановить пароль</a>-->
+            <!--<a class="btn btn-green" href="">Войти</a>-->
+        <!--</form>-->
+    <!--</div>-->
+    <div id="registration" class="registration">
+        <h2>Регистрация</h2>
+        <p>На Ваш номер отправлено сообщение с sms кодом</p>
+        <form>
+            <label for="code">Код</label>
+            <input id="code" type="text"/>
+            <label for="pass">Пароль</label>
+            <input id="pass" type="password"/>
+            <label for="repead-pass">Повторно пароль</label>
+            <input id="repead-pass" type="password"/>
+            <a class="btn btn-green" href="">Зарегистрироваться</a>
+        </form>
+    </div>
+    <div id="recover-password" class="recover-password">
+        <h2>Восстановление пароля</h2>
+        <p>На Ваш номер отправлено сообщение с sms кодом</p>
+        <form>
+            <label for="recover-code">Код</label>
+            <input id="recover-code" type="text"/>
+            <label for="new-pass">Новый пароль</label>
+            <input id="new-pass" type="password"/>
+            <label for="repead-new-pass">Повторно новый пароль</label>
+            <input id="repead-new-pass" type="password"/>
+            <a class="btn btn-green" href="">сохранить и войти</a>
+        </form>
+    </div>
+</div>
+</body>
+</html>
