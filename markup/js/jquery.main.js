@@ -1708,7 +1708,7 @@ $(document).ready(function (mySwiper) {
 			scrollbar: '.swiper-scrollbar',
 			scrollbarDraggable: true,
 			scrollbarHide: false,
-			scrollbarSnapOnRelease: true,
+			mousewheelSensitivity: 1
 		});
 	}
 });

@@ -3015,7 +3015,7 @@ whatever::-ms-reveal {
 			overflow: hidden;
 		}
 	}
-	.slick-slide {
+	.slick-slide, .sale-item {
 		.sale-box:nth-child(4) {
 			.bonus-card_popup {
 				left: -100px;
@@ -3140,7 +3140,7 @@ whatever::-ms-reveal {
 	}
 }
 
-.sale-box .sale-text {
+.sale-box .sale-text, .sale-text-holder {
 	height: 24px;
 	padding: 0 6px 0 30px;
 	font-size: 11px;
@@ -3193,6 +3193,7 @@ whatever::-ms-reveal {
 	position: absolute;
 	display: block;
 	top: 0;
+	left: 0;
 	width: 32px;
 	height: 41px;
 	background: url(../images/icons-sprite2.png) -283px -430px;
@@ -3392,13 +3393,16 @@ whatever::-ms-reveal {
 			width: 225px;
 		}
 	}
-	.slick-next {
-		right: -77px;
-	}
-	.slick-prev {
-		left: -77px;
+	.sale {
+		.slick-next {
+			right: -77px;
+		}
+		.slick-prev {
+			left: -77px;
+		}
 	}
 	.dots-gallery {
+		width: 1070px !important;
 		.slick-dots {
 			margin: 20px auto 0;
 			padding: 0;
@@ -7769,6 +7773,11 @@ optima-self1-cab page style
 
 .col-slide-holder {
 	width: 464px;
+	.sale-text {
+		& + .sale-text {
+			top: 45px;
+		}
+	}
 }
 
 .col-info-product {
@@ -10459,7 +10468,7 @@ text-align: left;
 	width: 475px;
 	z-index: 10000;
 	position: absolute;
-	top: 57px;
+	top: 46px;
 	left: -2px;
 	display: none;
 	a:hover {
@@ -14019,6 +14028,8 @@ div {
 			}
 		}
 		.home & {
+			float: none;
+			margin: 0 auto;
 			.sale-item {
 				padding: 0;
 			}
@@ -14187,9 +14198,14 @@ div {
 
 /* ---------- Slider reviewed ---------- */
 .reviewed-slider {
+	.product & {
+	}
 	&.swiper {
 		width: 1157px;
 		margin-left: 75px;
+		.product & {
+			margin: 0 auto;
+		}
 	}
 	position: relative;
 	.swiper-container {
@@ -14197,16 +14213,13 @@ div {
 		position: static;
 		padding-top: 20px;
 		.swiper-wrapper {
-			&:after {
-				content: '';
-				clear: both;
-			}
+			flex-flow: row nowrap;
 		}
 		.swiper-slide {
-			float: left;
+			//float: left;
 			display: flex;
 			flex-direction: row;
-			height: 100%;
+			height: auto;
 		}
 		.sale-box {
 			width: 225px;
@@ -14273,7 +14286,7 @@ div {
 				top: -1px;
 				height: 4px;
 				background: transparentize(#000, .5);
-				transition: background .2s ease-in-out, transform .3s ease-in-out  !important;
+				//transition: background .2s ease-in-out !important;
 				cursor: pointer;
 			}
 		}
@@ -14294,6 +14307,136 @@ div {
 			background-position: -10px -37px;
 			&:hover {
 				background-position: -10px -93px;
+				background-color: #007bb7;
+			}
+		}
+		&:hover {
+			.swiper-scrollbar {
+				.swiper-scrollbar-drag {
+					background: #000;
+					transition: background .2s ease-in-out, transform .3s ease-in-out  !important;
+				}
+			}
+		}
+	}
+}
+/* ---------- END Slider reviewed ---------- */
+
+/* ---------- Slider reviewed ---------- */
+.accessory-slider {
+	.product & {
+	}
+	&.swiper {
+		width: 1157px;
+		margin-left: 75px;
+		.product & {
+			margin: 0 auto;
+		}
+	}
+	position: relative;
+	.swiper-container {
+		width: 1070px;
+		position: static;
+		padding-top: 20px;
+		&.sale-gallery {
+			padding: 23px 0 0;
+		}
+		.swiper-wrapper {
+			flex-flow: row nowrap;
+		}
+		.swiper-slide {
+			float: left;
+			display: flex;
+			flex-direction: row;
+			height: auto;
+			padding: 0;
+		}
+		.sale-box {
+			margin-left: 0;
+			display: flex;
+			flex-direction: column;
+			flex: 1;
+			.sale-img {
+				img {
+					width: auto !important;
+				}
+			}
+			.sale-list {
+				li {
+					padding: 0;
+				}
+			}
+			.sale-text-box {
+				display: flex;
+				flex-direction: column;
+				flex-grow: 1;
+				border-left-color: #efeeee;
+				.sale-title {
+					height: auto;
+					max-height: inherit;
+					margin-bottom: auto;
+					padding-bottom: 10px;
+				}
+				.price {
+					margin-bottom: 20px;
+				}
+			}
+			& + .sale-box {
+				border-left: 0;
+				.sale-text-box {
+					position: relative;
+					&:after {
+						content: '';
+						position: absolute;
+						top: 0;
+						left: -2px;
+						width: 2px;
+						height: 100%;
+						background: #fff;
+						display: inline-block;
+						z-index: 1;
+					}
+				}
+			}
+		}
+		.swiper-button-next {
+			right: 3px;
+		}
+		.swiper-button-prev {
+			left: 0;
+		}
+		.swiper-scrollbar {
+			bottom: -8px;
+			width: 1070px;
+			left: 50%;
+			transform: translateX(-50%);
+			height: 2px;
+			.swiper-scrollbar-drag {
+				top: -1px;
+				height: 4px;
+				background: transparentize(#000, .5);
+				//transition: background .2s ease-in-out !important;
+				cursor: pointer;
+			}
+		}
+		.swiper-button-next, .swiper-button-prev {
+			top: 37%;
+			width: 60px;
+			height: 60px;
+			background: #fff url(../images/icons-sprite2.png) no-repeat 0 -25px;
+			border: 2px solid #efeeee;
+		}
+		.swiper-button-next {
+			background-position: 6px -135px;
+			&:hover {
+				background-position: 6px -192px;
+				background-color: #007bb7;
+			}
+		}
+		.swiper-button-prev {
+			background-position: 3px -23px;
+			&:hover {
+				background-position: 2px -79px;
 				background-color: #007bb7;
 			}
 		}
