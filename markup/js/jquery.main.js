@@ -1700,16 +1700,42 @@ $(document).ready(function () {
 
 /* ========== Swiper reviewed slider ========== */
 $(document).ready(function (mySwiper) {
-	if ($('.swiper-container').length) {
-		var mySwiper = new Swiper('.swiper-container', {
-			slidesPerView:'auto',
-			nextButton: '.swiper-button-next',
-			prevButton: '.swiper-button-prev',
-			scrollbar: '.swiper-scrollbar',
-			scrollbarDraggable: true,
-			scrollbarHide: false,
-			mousewheelSensitivity: 1
+	var swiperContainer = $('.swiper-container');
+
+	if (swiperContainer.length) {
+		swiperContainer.each(function (index) {
+			var currSwiper = $(this);
+			$(this).addClass('swiper-' + index);
+			var mySwiper = new Swiper(currSwiper[0], {
+				index: index,
+				slidesPerView: 'auto',
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				scrollbar: currSwiper.find('.swiper-scrollbar')[0],
+				scrollbarDraggable: true,
+				scrollbarHide: false,
+				firstSlideMessage: 'lorem',
+				onReachEnd: function (swiper) {
+					$('.swiper-' + this.index + ' .swiper-button-next').addClass('swiper-button-disabled');
+				},
+				onReachBeginning: function (swiper) {
+					$('.swiper-' + this.index + ' .swiper-button-prev').addClass('swiper-button-disabled');
+				},
+				onScroll: function(swiper) {
+					console.log('is-scroll');
+				},
+			});
+			mySwiper.on('scroll', function(){
+				console.log('is-scroll');
+			});
 		});
 	}
 });
+$(document).ready(function () {
+	$('.swiper-scrollbar-drag').on('click', function (e) {
+//		e.stopPropagation();
+	});
+});
+
+
 /* ========== END Swiper reviewed slider  ========== */

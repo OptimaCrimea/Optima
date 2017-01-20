@@ -9,6 +9,7 @@
 	<link media="all" rel="stylesheet" href="css/styles-test.css">
 	<link media="all" rel="stylesheet" href="css/slick.css">
 	<link media="all" rel="stylesheet" href="css/owl.carousel.css">
+	<link media="all" rel="stylesheet" href="css/swiper.css">
 	<!--<link media="all" rel="stylesheet" href="css/jquery-ui.css">-->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic&amp;subset=latin,cyrillic-ext,cyrillic,latin-ext'
 	      rel='stylesheet' type='text/css'>
@@ -41,6 +42,7 @@
 	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
 	<script type="text/javascript" src="js/jquery.scombobox.js"></script>
 	<script type="text/javascript" src="js/jquery.mobile.custom.js"></script>
+	<script type="text/javascript" src="js/swiper.js"></script>
 	
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -554,15 +556,15 @@
 									<div class="sale-box sell-out">
 										<div class="sale-img">
 											<a href="#">
-												<img src="images/img-no-photo-small.png" width="158"
-												     height="188" alt="">
+												<img src="images/img-product-12.jpg" width="138"
+												     height="168" alt="">
 												<div class="sale-box__colors-bar">
-													<span class="colors-bar__button current red"></span>
-													<span class="colors-bar__button white"></span>
-													<span class="colors-bar__button black"></span>
-													<span class="colors-bar__button grey"></span>
+													<span class="colors-bar__button current" style="background: #ff0000;"></span>
+													<span class="colors-bar__button" style="background: #000000;"></span>
+													<span class="colors-bar__button" style="background: #424242;"></span>
+													<span class="colors-bar__button" style="background: #ffffff;"></span>
 												</div>
-											</a>
+											</a>style="background: #ff0000;"
 											<span class="sale-text pink">
 												<mark class='active'></mark>
 												распродажа -34%
@@ -660,9 +662,9 @@
 											<a href="#"><img src="images/img-for-sale1.jpg" width="158" height="188"
 											                 alt="">
 												<div class="sale-box__colors-bar">
-													<span class="colors-bar__button current red"></span>
-													<span class="colors-bar__button white"></span>
-													<span class="colors-bar__button black"></span>
+													<span class="colors-bar__button current" style="background: #ff0000;"></span>
+													<span class="colors-bar__button" style="background: #ffffff;"></span>
+													<span class="colors-bar__button" style="background: #000000;"></span>
 												</div>
 											</a>
 											<span class="sale-text orange">
@@ -748,8 +750,8 @@
 											<a href="#"><img src="images/img-for-sale1.jpg" width="158" height="188"
 											                 alt="">
 												<div class="sale-box__colors-bar">
-													<span class="colors-bar__button black"></span>
-													<span class="colors-bar__button current grey"></span>
+													<span class="colors-bar__button" style="background: #000000;"></span>
+													<span class="colors-bar__button current" style="background: #ff0000;"></span>
 												</div>
 											</a>
 											<span class="sale-text magento">
@@ -3225,18 +3227,18 @@
 										<span class="reset"><a href="#">Сбросить</a></span>
 										<ul class="color-list">
 											<li><input id="white" type="checkbox" class="check white"/><label
-													class="label-check" for="white">white</label></li>
-											<li><input id="red" type="checkbox" class="check red"/><label
-													class="label-check" for="red">red</label></li>
-											<li><input id="green" type="checkbox" class="check green"/><label
-													class="label-check" for="green">green</label></li>
-											<li><input id="violet" type="checkbox" class="check violet"/><label
-													class="label-check" for="violet">violet</label></li>
-											<li><input id="blue" type="checkbox" class="check blue"/><label
-													class="label-check" for="blue">blue</label></li>
-											<li class="active"><input id="black" type="checkbox" class="check black"
+													class="label-check" for="white" style="background: #ffffff;"></label></li>
+											<li><input id="red" type="checkbox" class="check"/><label
+													class="label-check" for="red" style="background: #ff0000;"></label></li>
+											<li><input id="green" type="checkbox" class="check"/><label
+													class="label-check" for="green" style="background: #32bb17;"></label></li>
+											<li><input id="violet" type="checkbox" class="check"/><label
+													class="label-check" for="violet" style="background: #a117bb;"></label></li>
+											<li><input id="blue" type="checkbox" class="check"/><label
+													class="label-check" for="blue" style="background: #2717bb;"></label></li>
+											<li class="active"><input id="black" type="checkbox" class="check"
 											                          checked="checked"/><label class="label-check"
-											                                                    for="black">black</label>
+											                                                    for="black" style="background: #000000;"></label>
 											</li>
 										</ul>
 									</div>
@@ -4070,7 +4072,479 @@
 						</div>
 					</div>
 				</div>
-				<div class="sale reviewed reviewed-slider">
+				<div class="sale reviewed reviewed-slider swiper">
+							<h2>Просмотренные</h2>
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="sale-box">
+											<div class="sale-img">
+												<a href="#"><img src="images/img-product-gallery1.jpg" width="184" height="143" alt=""></a>
+												<ul class="sale-list">
+													<li><a title="compare" class="compare" href="#">compare</a></li>
+													<li><a title="follow" class="follow" href="#">follow</a></li>
+												</ul>
+											</div>
+											<div class="sale-text-box">
+												<strong class="sale-title"><a href="#">Ноутбук ACER Aspire V5-573-34014G50akk Флеш USB San Disk Cruzer Флеш USB San Disk Cruzer</a></strong>
+												<div class="price">
+													<div class="price-text">
+														<strong>45 880 <em>руб</em></strong>
+													</div>
+													<a href="#" class="btn btn-green">купить</a>
+												</div>
+											</div>
+										</div>
+										<div class="sale-box">
+											<div class="sale-img">
+												<a href="#"><img src="images/img-product-gallery2.jpg" width="184" height="143" alt=""></a>
+												
+												<ul class="sale-list">
+													<li><a title="compare" class="compare" href="#">compare</a></li>
+													<li><a title="follow" class="follow" href="#">follow</a></li>
+												</ul>
+											</div>
+											<div class="sale-text-box">
+												<strong class="sale-title"><a href="#">Ноутбук ACER Aspire V5-573-54204G50aii Флеш USB San Disk Cruzer Флеш USB San Disk Cruzer Флеш USB San Disk Cruzer</a></strong>
+												<div class="price">
+													<div class="price-text">
+														<strong>9 780 <em>руб</em></strong>
+													</div>
+													<a href="#" class="btn btn-green">купить</a>
+												</div>
+											</div>
+										</div>
+										<div class="sale-box">
+											<div class="sale-img">
+												<a href="#"><img src="images/img-product-gallery1.jpg" width="184" height="143" alt=""></a>
+												<ul class="sale-list">
+													<li><a title="compare" class="compare" href="#">compare</a></li>
+													<li><a title="follow" class="follow" href="#">follow</a></li>
+												</ul>
+											</div>
+											<div class="sale-text-box">
+												<strong class="sale-title"><a href="#">Ноутбук ACER Aspire V5-573-34014G50akk Флеш USB San Disk Cruzer Флеш USB San Disk Cruzer</a></strong>
+												<div class="price">
+													<div class="price-text">
+														<strong>45 880 <em>руб</em></strong>
+													</div>
+													<a href="#" class="btn btn-green">купить</a>
+												</div>
+											</div>
+										</div>
+										<div class="sale-box">
+											<div class="sale-img">
+												<a href="#"><img src="images/img-product-gallery2.jpg" width="184" height="143" alt=""></a>
+												<ul class="sale-list">
+													<li><a title="compare" class="compare" href="#">compare</a></li>
+													<li><a title="follow" class="follow" href="#">follow</a></li>
+												</ul>
+											</div>
+											<div class="sale-text-box">
+												<strong class="sale-title"><a href="#">Ноутбук ACER Aspire V5-573-54204G50aii Флеш USB San Disk Cruzer Флеш USB San Disk Cruzer</a></strong>
+												<div class="price">
+													<div class="price-text">
+														<strong>9 780 <em>руб</em></strong>
+													</div>
+													<a href="#" class="btn btn-green">купить</a>
+												</div>
+											</div>
+										</div>
+										<div class="sale-box">
+											<div class="sale-img">
+												<a href="#"><img src="images/img-product-gallery3.jpg" width="184" height="143" alt=""></a>
+												<ul class="sale-list">
+													<li><a title="compare" class="compare" href="#">compare</a></li>
+													<li><a title="follow" class="follow" href="#">follow</a></li>
+												</ul>
+											</div>
+											<div class="sale-text-box">
+												<strong class="sale-title"><a href="#">Ноутбук ACER Aspire V5-573-54204G50aii</a></strong>
+												<div class="price">
+													<div class="price-text">
+														<strong>9 780 <em>руб</em></strong>
+													</div>
+													<a href="#" class="btn btn-green">купить</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="sale-box">
+											<div class="sale-img">
+												<a href="#"><img src="images/img-product-gallery1.jpg" width="184" height="143" alt=""></a>
+												<ul class="sale-list">
+													<li><a title="compare" class="compare" href="#">compare</a></li>
+													<li><a title="follow" class="follow" href="#">follow</a></li>
+												</ul>
+											</div>
+											<div class="sale-text-box">
+												<strong class="sale-title"><a href="#">Ноутбук ACER Aspire V5-573-34014G50akk</a></strong>
+												<div class="price">
+													<div class="price-text">
+														<strong>45 880 <em>руб</em></strong>
+													</div>
+													<a href="#" class="btn btn-green">купить</a>
+												</div>
+											</div>
+										</div>
+										<div class="sale-box">
+											<div class="sale-img">
+												<a href="#"><img src="images/img-product-gallery2.jpg" width="184" height="143" alt=""></a>
+												<ul class="sale-list">
+													<li><a title="compare" class="compare" href="#">compare</a></li>
+													<li><a title="follow" class="follow" href="#">follow</a></li>
+												</ul>
+											</div>
+											<div class="sale-text-box">
+												<strong class="sale-title"><a href="#">Ноутбук ACER Aspire V5-573-54204G50aii</a></strong>
+												<div class="price">
+													<div class="price-text">
+														<strong>9 780 <em>руб</em></strong>
+													</div>
+													<a href="#" class="btn btn-green">купить</a>
+												</div>
+											</div>
+										</div>
+										<div class="sale-box">
+											<div class="sale-img">
+												<a href="#"><img src="images/img-product-gallery1.jpg" width="184" height="143" alt=""></a>
+												<ul class="sale-list">
+													<li><a title="compare" class="compare" href="#">compare</a></li>
+													<li><a title="follow" class="follow" href="#">follow</a></li>
+												</ul>
+											</div>
+											<div class="sale-text-box">
+												<strong class="sale-title"><a href="#">Ноутбук ACER Aspire V5-573-34014G50akk</a></strong>
+												<div class="price">
+													<div class="price-text">
+														<strong>45 880 <em>руб</em></strong>
+													</div>
+													<a href="#" class="btn btn-green">купить</a>
+												</div>
+											</div>
+										</div>
+										<div class="sale-box">
+											<div class="sale-img">
+												<a href="#"><img src="images/img-product-gallery2.jpg" width="184" height="143" alt=""></a>
+												<ul class="sale-list">
+													<li><a title="compare" class="compare" href="#">compare</a></li>
+													<li><a title="follow" class="follow" href="#">follow</a></li>
+												</ul>
+											</div>
+											<div class="sale-text-box">
+												<strong class="sale-title"><a href="#">Ноутбук ACER Aspire V5-573-54204G50aii</a></strong>
+												<div class="price">
+													<div class="price-text">
+														<strong>9 780 <em>руб</em></strong>
+													</div>
+													<a href="#" class="btn btn-green">купить</a>
+												</div>
+											</div>
+										</div>
+										<div class="sale-box">
+											<div class="sale-img">
+												<a href="#"><img src="images/img-product-gallery3.jpg" width="184" height="143" alt=""></a>
+												<ul class="sale-list">
+													<li><a title="compare" class="compare" href="#">compare</a></li>
+													<li><a title="follow" class="follow" href="#">follow</a></li>
+												</ul>
+											</div>
+											<div class="sale-text-box">
+												<strong class="sale-title"><a href="#">Ноутбук ACER Aspire V5-573-54204G50aii</a></strong>
+												<div class="price">
+													<div class="price-text">
+														<strong>9 780 <em>руб</em></strong>
+													</div>
+													<a href="#" class="btn btn-green">купить</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="sale-box">
+											<div class="sale-img">
+												<a href="#"><img src="images/img-product-gallery1.jpg" width="184" height="143" alt=""></a>
+												<ul class="sale-list">
+													<li><a title="compare" class="compare" href="#">compare</a></li>
+													<li><a title="follow" class="follow" href="#">follow</a></li>
+												</ul>
+											</div>
+											<div class="sale-text-box">
+												<strong class="sale-title"><a href="#">Ноутбук ACER Aspire V5-573-34014G50akk</a></strong>
+												<div class="price">
+													<div class="price-text">
+														<strong>45 880 <em>руб</em></strong>
+													</div>
+													<a href="#" class="btn btn-green">купить</a>
+												</div>
+											</div>
+										</div>
+										<div class="sale-box">
+											<div class="sale-img">
+												<a href="#"><img src="images/img-product-gallery2.jpg" width="184" height="143" alt=""></a>
+												<ul class="sale-list">
+													<li><a title="compare" class="compare" href="#">compare</a></li>
+													<li><a title="follow" class="follow" href="#">follow</a></li>
+												</ul>
+											</div>
+											<div class="sale-text-box">
+												<strong class="sale-title"><a href="#">Ноутбук ACER Aspire V5-573-54204G50aii</a></strong>
+												<div class="price">
+													<div class="price-text">
+														<strong>9 780 <em>руб</em></strong>
+													</div>
+													<a href="#" class="btn btn-green">купить</a>
+												</div>
+											</div>
+										</div>
+										<div class="sale-box">
+											<div class="sale-img">
+												<a href="#"><img src="images/img-product-gallery1.jpg" width="184" height="143" alt=""></a>
+												<ul class="sale-list">
+													<li><a title="compare" class="compare" href="#">compare</a></li>
+													<li><a title="follow" class="follow" href="#">follow</a></li>
+												</ul>
+											</div>
+											<div class="sale-text-box">
+												<strong class="sale-title"><a href="#">Ноутбук ACER Aspire V5-573-34014G50akk</a></strong>
+												<div class="price">
+													<div class="price-text">
+														<strong>45 880 <em>руб</em></strong>
+													</div>
+													<a href="#" class="btn btn-green">купить</a>
+												</div>
+											</div>
+										</div>
+										<div class="sale-box">
+											<div class="sale-img">
+												<a href="#"><img src="images/img-product-gallery2.jpg" width="184" height="143" alt=""></a>
+												<ul class="sale-list">
+													<li><a title="compare" class="compare" href="#">compare</a></li>
+													<li><a title="follow" class="follow" href="#">follow</a></li>
+												</ul>
+											</div>
+											<div class="sale-text-box">
+												<strong class="sale-title"><a href="#">Ноутбук ACER Aspire V5-573-54204G50aii</a></strong>
+												<div class="price">
+													<div class="price-text">
+														<strong>9 780 <em>руб</em></strong>
+													</div>
+													<a href="#" class="btn btn-green">купить</a>
+												</div>
+											</div>
+										</div>
+										<div class="sale-box">
+											<div class="sale-img">
+												<a href="#"><img src="images/img-product-gallery3.jpg" width="184" height="143" alt=""></a>
+												<ul class="sale-list">
+													<li><a title="compare" class="compare" href="#">compare</a></li>
+													<li><a title="follow" class="follow" href="#">follow</a></li>
+												</ul>
+											</div>
+											<div class="sale-text-box">
+												<strong class="sale-title"><a href="#">Ноутбук ACER Aspire V5-573-54204G50aii</a></strong>
+												<div class="price">
+													<div class="price-text">
+														<strong>9 780 <em>руб</em></strong>
+													</div>
+													<a href="#" class="btn btn-green">купить</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="sale-box">
+											<div class="sale-img">
+												<a href="#"><img src="images/img-product-gallery1.jpg" width="184" height="143" alt=""></a>
+												<ul class="sale-list">
+													<li><a title="compare" class="compare" href="#">compare</a></li>
+													<li><a title="follow" class="follow" href="#">follow</a></li>
+												</ul>
+											</div>
+											<div class="sale-text-box">
+												<strong class="sale-title"><a href="#">Ноутбук ACER Aspire V5-573-34014G50akk</a></strong>
+												<div class="price">
+													<div class="price-text">
+														<strong>45 880 <em>руб</em></strong>
+													</div>
+													<a href="#" class="btn btn-green">купить</a>
+												</div>
+											</div>
+										</div>
+										<div class="sale-box">
+											<div class="sale-img">
+												<a href="#"><img src="images/img-product-gallery2.jpg" width="184" height="143" alt=""></a>
+												<ul class="sale-list">
+													<li><a title="compare" class="compare" href="#">compare</a></li>
+													<li><a title="follow" class="follow" href="#">follow</a></li>
+												</ul>
+											</div>
+											<div class="sale-text-box">
+												<strong class="sale-title"><a href="#">Ноутбук ACER Aspire V5-573-54204G50aii</a></strong>
+												<div class="price">
+													<div class="price-text">
+														<strong>9 780 <em>руб</em></strong>
+													</div>
+													<a href="#" class="btn btn-green">купить</a>
+												</div>
+											</div>
+										</div>
+										<div class="sale-box">
+											<div class="sale-img">
+												<a href="#"><img src="images/img-product-gallery1.jpg" width="184" height="143" alt=""></a>
+												<ul class="sale-list">
+													<li><a title="compare" class="compare" href="#">compare</a></li>
+													<li><a title="follow" class="follow" href="#">follow</a></li>
+												</ul>
+											</div>
+											<div class="sale-text-box">
+												<strong class="sale-title"><a href="#">Ноутбук ACER Aspire V5-573-34014G50akk</a></strong>
+												<div class="price">
+													<div class="price-text">
+														<strong>45 880 <em>руб</em></strong>
+													</div>
+													<a href="#" class="btn btn-green">купить</a>
+												</div>
+											</div>
+										</div>
+										<div class="sale-box">
+											<div class="sale-img">
+												<a href="#"><img src="images/img-product-gallery2.jpg" width="184" height="143" alt=""></a>
+												<ul class="sale-list">
+													<li><a title="compare" class="compare" href="#">compare</a></li>
+													<li><a title="follow" class="follow" href="#">follow</a></li>
+												</ul>
+											</div>
+											<div class="sale-text-box">
+												<strong class="sale-title"><a href="#">Ноутбук ACER Aspire V5-573-54204G50aii</a></strong>
+												<div class="price">
+													<div class="price-text">
+														<strong>9 780 <em>руб</em></strong>
+													</div>
+													<a href="#" class="btn btn-green">купить</a>
+												</div>
+											</div>
+										</div>
+										<div class="sale-box">
+											<div class="sale-img">
+												<a href="#"><img src="images/img-product-gallery3.jpg" width="184" height="143" alt=""></a>
+												<ul class="sale-list">
+													<li><a title="compare" class="compare" href="#">compare</a></li>
+													<li><a title="follow" class="follow" href="#">follow</a></li>
+												</ul>
+											</div>
+											<div class="sale-text-box">
+												<strong class="sale-title"><a href="#">Ноутбук ACER Aspire V5-573-54204G50aii</a></strong>
+												<div class="price">
+													<div class="price-text">
+														<strong>9 780 <em>руб</em></strong>
+													</div>
+													<a href="#" class="btn btn-green">купить</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="sale-box">
+											<div class="sale-img">
+												<a href="#"><img src="images/img-product-gallery1.jpg" width="184" height="143" alt=""></a>
+												<ul class="sale-list">
+													<li><a title="compare" class="compare" href="#">compare</a></li>
+													<li><a title="follow" class="follow" href="#">follow</a></li>
+												</ul>
+											</div>
+											<div class="sale-text-box">
+												<strong class="sale-title"><a href="#">Ноутбук ACER Aspire V5-573-34014G50akk</a></strong>
+												<div class="price">
+													<div class="price-text">
+														<strong>45 880 <em>руб</em></strong>
+													</div>
+													<a href="#" class="btn btn-green">купить</a>
+												</div>
+											</div>
+										</div>
+										<div class="sale-box">
+											<div class="sale-img">
+												<a href="#"><img src="images/img-product-gallery2.jpg" width="184" height="143" alt=""></a>
+												<ul class="sale-list">
+													<li><a title="compare" class="compare" href="#">compare</a></li>
+													<li><a title="follow" class="follow" href="#">follow</a></li>
+												</ul>
+											</div>
+											<div class="sale-text-box">
+												<strong class="sale-title"><a href="#">Ноутбук ACER Aspire V5-573-54204G50aii</a></strong>
+												<div class="price">
+													<div class="price-text">
+														<strong>9 780 <em>руб</em></strong>
+													</div>
+													<a href="#" class="btn btn-green">купить</a>
+												</div>
+											</div>
+										</div>
+										<div class="sale-box">
+											<div class="sale-img">
+												<a href="#"><img src="images/img-product-gallery1.jpg" width="184" height="143" alt=""></a>
+												<ul class="sale-list">
+													<li><a title="compare" class="compare" href="#">compare</a></li>
+													<li><a title="follow" class="follow" href="#">follow</a></li>
+												</ul>
+											</div>
+											<div class="sale-text-box">
+												<strong class="sale-title"><a href="#">Ноутбук ACER Aspire V5-573-34014G50akk</a></strong>
+												<div class="price">
+													<div class="price-text">
+														<strong>45 880 <em>руб</em></strong>
+													</div>
+													<a href="#" class="btn btn-green">купить</a>
+												</div>
+											</div>
+										</div>
+										<div class="sale-box">
+											<div class="sale-img">
+												<a href="#"><img src="images/img-product-gallery2.jpg" width="184" height="143" alt=""></a>
+												<ul class="sale-list">
+													<li><a title="compare" class="compare" href="#">compare</a></li>
+													<li><a title="follow" class="follow" href="#">follow</a></li>
+												</ul>
+											</div>
+											<div class="sale-text-box">
+												<strong class="sale-title"><a href="#">Ноутбук ACER Aspire V5-573-54204G50aii</a></strong>
+												<div class="price">
+													<div class="price-text">
+														<strong>9 780 <em>руб</em></strong>
+													</div>
+													<a href="#" class="btn btn-green">купить</a>
+												</div>
+											</div>
+										</div>
+										<div class="sale-box">
+											<div class="sale-img">
+												<a href="#"><img src="images/img-product-gallery3.jpg" width="184" height="143" alt=""></a>
+												<ul class="sale-list">
+													<li><a title="compare" class="compare" href="#">compare</a></li>
+													<li><a title="follow" class="follow" href="#">follow</a></li>
+												</ul>
+											</div>
+											<div class="sale-text-box">
+												<strong class="sale-title"><a href="#">Ноутбук ACER Aspire V5-573-54204G50aii</a></strong>
+												<div class="price">
+													<div class="price-text">
+														<strong>9 780 <em>руб</em></strong>
+													</div>
+													<a href="#" class="btn btn-green">купить</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+								<div class="swiper-scrollbar"></div>
+							</div>
+							<span class="all-reviewed"><a href="#">Все просмотренные</a></span>
+						</div>
+				<!-- <div class="sale reviewed reviewed-slider">
 					<h2>Просмотренные</h2>
 					<div class="sale-gallery gallery flexible-title mobile-centered">
 						<div class="sale-item">
@@ -4280,7 +4754,7 @@
 						</div>
 					</div>
 					<span class="all-reviewed"><a href="#">Все просмотренные</a></span>
-				</div>
+				</div> -->
 				<div class="products-text slide-hold">
 					<h2>Описание</h2>
 					<p>Ноутбуки, нетбуки последних моделей обладают большим набором технических характеристик. Экран
