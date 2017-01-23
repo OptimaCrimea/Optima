@@ -1687,11 +1687,13 @@ $(document).ready(function () {
 				.find('.bonus-card_popup')
 				.removeClass('active-card');
 			$popup.removeClass('active-card');
+			$holder.removeClass('active-box');
 			console.log('remove');
 		} else {
 			$(this).closest('.sale')
 				.find('.bonus-card_popup')
 				.removeClass('active-card');
+			console.log('active-card');
 			$holder.addClass('active-box');
 			$popup.addClass('active-card');
 		}
