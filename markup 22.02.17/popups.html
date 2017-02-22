@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="robots" content="noindex, nofollow"/>
+    <meta charset="utf-8">
+    <title>popups</title>
+    <!-- <link media="all" rel="stylesheet" href="css/styles.css"> -->
+    <link media="all" rel="stylesheet" href="css/styles-test.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic&amp;subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+    <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="js/jquery.main.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/slideBlock.js"></script>
+    <script type="text/javascript" src="js/open-close.js"></script>
+    <script type="text/javascript" src="js/tabs.js"></script>
+    <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="js/select2.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.spinner.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.button.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.accordion.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.mouse.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.slider.js"></script>
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+<!--<div class="popup-holder">-->
+    <!--<div class="cart-order" id="popup">-->
+        <!--<div class="order order-main">-->
+            <!--<h2>Корзина</h2>-->
+            <!--<div class="order-box">-->
+                <!--<a class="close" href="#">close</a>-->
+                <!--<img class="order-img" src="images/img-order1.jpg" width="78" height="79" alt="">-->
+                <!--<div class="order-details">-->
+                    <!--<strong class="order-title"><a href="#">Флеш USB San Disk Cruzer 16GB (SDCZ36-016G-B35)</a></strong>-->
+                    <!--<span>Код товара: 39299</span>-->
+                    <!--<strong>13 690<em> руб</em></strong>-->
+                <!--</div>-->
+                <!--<div class="order-price">-->
+                    <!--<div class="number-holder">-->
+                        <!--<div class="number">-->
+                            <!--<input class="spinner" name="value" value="12">-->
+                        <!--</div>-->
+                        <!--<span class="name">шт</span>-->
+                    <!--</div>-->
+                    <!--<strong class="price-summary">10 490<em> руб</em></strong>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="order-box">-->
+                <!--<a class="close" href="#">close</a>-->
+                <!--<img class="order-img" src="images/img-order2.jpg" width="78" height="79" alt="">-->
+                <!--<div class="order-details">-->
+                    <!--<strong class="order-title"><a href="#">Подставка под ноутбук Trust ICE Notebook</a></strong>-->
+                    <!--<span>Код товара: 39299</span>-->
+                    <!--<strong>13 690<em> руб</em></strong>-->
+                <!--</div>-->
+                <!--<div class="order-price">-->
+                    <!--<div class="number-holder">-->
+                        <!--<div class="number">-->
+                            <!--<input class="spinner" name="value" value="12">-->
+                        <!--</div>-->
+                        <!--<span class="name">шт</span>-->
+                    <!--</div>-->
+                    <!--<strong class="price-summary">10 490<em> руб</em></strong>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="order-box">-->
+                <!--<a class="close" href="#">close</a>-->
+                <!--<img class="order-img" src="images/img-order2.jpg" width="78" height="79" alt="">-->
+                <!--<div class="order-details">-->
+                    <!--<strong class="order-title"><a href="#">Подставка под ноутбук Trust ICE Notebook</a></strong>-->
+                    <!--<span>Код товара: 39299</span>-->
+                    <!--<strong>13 690<em> руб</em></strong>-->
+                <!--</div>-->
+                <!--<div class="order-price">-->
+                    <!--<div class="number-holder">-->
+                        <!--<div class="number">-->
+                            <!--<input class="spinner" name="value" value="12">-->
+                        <!--</div>-->
+                        <!--<span class="name">шт</span>-->
+                    <!--</div>-->
+                    <!--<strong class="price-summary">10 490<em> руб</em></strong>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="cart-order-summary">-->
+                <!--<div class="cart-order-summary-l">-->
+                    <!--<a href="#" class="btn btn-green">оформить заказ</a>-->
+                    <!--<span><a href="#">Продолжить покупки</a></span>-->
+                <!--</div>-->
+                <!--<div class="cart-order-summary-r">-->
+                    <!--<span>К оплате: </span>-->
+                    <!--<strong class="price-summary">340 100<em> руб</em></strong>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="order-sale">-->
+                <!--<h3>Скидка на аксессуары в комплекте с USB San Disk Cruzer 16GB</h3>-->
+                <!--<div class="order-sale-gallery gallery">-->
+                    <!--<div class="order-sale-item">-->
+                        <!--<div class="order-box">-->
+                            <!--<div class="img-action">-->
+									<!--<span class="sale-text orange">-->
+										<!--<em>-10%</em>-->
+									<!--</span>-->
+                                <!--<img class="order-img" src="images/img-order3.jpg" width="91" height="53" alt="">-->
+                                <!--<strong class="order-title"><a href="#">Ноутбук ASUS X551CA</a></strong>-->
+                            <!--</div>-->
+                            <!--<div class="order-details">-->
+                                <!--<strong>13 690<em> руб</em></strong>-->
+                                <!--<strong class="old-price"><span>14 710</span><em> руб</em></strong>-->
+                                <!--<a href="#" class="btn btn-blue">купить комплект</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="order-sale-item">-->
+                        <!--<div class="order-box">-->
+                            <!--<div class="img-action">-->
+									<!--<span class="sale-text orange">-->
+										<!--<em>-10%</em>-->
+									<!--</span>-->
+                                <!--<img class="order-img" src="images/img-order3.jpg" width="91" height="53" alt="">-->
+                                <!--<strong class="order-title"><a href="#">Ноутбук ASUS X551CA</a></strong>-->
+                            <!--</div>-->
+                            <!--<div class="order-details">-->
+                                <!--<strong>13 690<em> руб</em></strong>-->
+                                <!--<strong class="old-price"><span>14 710</span><em> руб</em></strong>-->
+                                <!--<a href="#" class="btn btn-blue">купить комплект</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="cart-order cart-action" id="popup-action">-->
+        <!--<div class="order order-main">-->
+            <!--<h2>Корзина</h2>-->
+            <!--<div class="order-box">-->
+                <!--<a class="close" href="#">close</a>-->
+                <!--<img class="order-img" src="images/img-order1.jpg" width="78" height="79" alt="">-->
+                <!--<div class="order-details">-->
+                    <!--<strong class="order-title"><a href="#">Флеш USB San Disk Cruzer 16GB (SDCZ36-016G-B35)</a></strong>-->
+                    <!--<span>Код товара: 39299</span>-->
+                    <!--<strong>13 690<em> руб</em></strong>-->
+                <!--</div>-->
+                <!--<div class="order-price">-->
+                    <!--<div class="number-holder">-->
+                        <!--<div class="number">-->
+                            <!--<input class="spinner" name="value" value="12">-->
+                        <!--</div>-->
+                        <!--<span class="name">шт</span>-->
+                    <!--</div>-->
+                    <!--<strong class="price-summary">10 490<em> руб</em></strong>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="order action">-->
+                <!--<div class="order-box">-->
+                    <!--<h3><a class="close" href="#">close</a><span>Акционное предложение</span></h3>-->
+                    <!--<img class="order-img" src="images/img-order1.jpg" width="78" height="79" alt="">-->
+                    <!--<div class="order-details">-->
+                        <!--<strong class="order-title"><a href="#">Флеш USB San Disk Cruzer 16GB (SDCZ36-016G-B35)</a></strong>-->
+                        <!--<span>Код товара: 39299</span>-->
+                        <!--<strong><b>13 690</b><em> руб</em></strong>-->
+                    <!--</div>-->
+                    <!--<div class="order-price">-->
+                        <!--<div class="number-holder">-->
+                            <!--<div class="number">-->
+                                <!--<input class="spinner" name="value" value="12">-->
+                            <!--</div>-->
+                            <!--<span class="name">компл</span>-->
+                        <!--</div>-->
+                        <!--<strong class="price-summary">10 490<em> руб</em></strong>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="order-box">-->
+                    <!--<div class="img-action">-->
+							<!--<span class="sale-text orange">-->
+								<!--<em>-10%</em>-->
+							<!--</span>-->
+                        <!--<img class="order-img" src="images/img-order3.jpg" width="91" height="53" alt="">-->
+                    <!--</div>-->
+                    <!--<div class="order-details">-->
+                        <!--<strong class="order-title"><a href="#">Ноутбук ASUS X551CA</a></strong>-->
+                        <!--<span>Код товара: 39299</span>-->
+                        <!--<strong>13 690<em> руб</em></strong>-->
+                        <!--<strong class="old-price"><span>14 710</span><em> руб</em></strong>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="cart-order-summary">-->
+                <!--<div class="cart-order-summary-l">-->
+                    <!--<a href="#" class="btn btn-green">оформить заказ</a>-->
+                    <!--<span><a href="#">Продолжить покупки</a></span>-->
+                <!--</div>-->
+                <!--<div class="cart-order-summary-r">-->
+                    <!--<span>К оплате: </span>-->
+                    <!--<strong class="price-summary">340 100<em> руб</em></strong>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<div class="popup-holder">
+    <div class="cart-order" id="popup">
+        <div class="order order-main">
+            <h2>Корзина</h2>
+            <div class="order-box">
+                <a class="close" href="#">close</a>
+                <img class="order-img" src="images/img-order1.jpg" width="78" height="79" alt="">
+                <div class="order-details">
+                    <strong class="order-title"><a href="#">Флеш USB San Disk Cruzer 16GB (SDCZ36-016G-B35)</a></strong>
+                    <span>Код товара: 39299</span>
+                    <strong>13 690<em> руб</em></strong>
+                </div>
+                <div class="order-price">
+                    <div class="number-holder">
+                        <div class="number">
+                            <input class="spinner" name="value" value="12">
+                        </div>
+                        <span class="name">шт</span>
+                    </div>
+                    <strong class="price-summary">10 490<em> руб</em></strong>
+                </div>
+            </div>
+            <div class="order-box">
+                <a class="close" href="#">close</a>
+                <img class="order-img" src="images/img-order2.jpg" width="78" height="79" alt="">
+                <div class="order-details">
+                    <strong class="order-title"><a href="#">Подставка под ноутбук Trust ICE Notebook</a></strong>
+                    <span>Код товара: 39299</span>
+                    <strong>13 690<em> руб</em></strong>
+                </div>
+                <div class="order-price">
+                    <div class="number-holder">
+                        <div class="number">
+                            <input class="spinner" name="value" value="12">
+                        </div>
+                        <span class="name">шт</span>
+                    </div>
+                    <strong class="price-summary">10 490<em> руб</em></strong>
+                </div>
+            </div>
+            <div class="order-box">
+                <a class="close" href="#">close</a>
+                <img class="order-img" src="images/img-order2.jpg" width="78" height="79" alt="">
+                <div class="order-details">
+                    <strong class="order-title"><a href="#">Подставка под ноутбук Trust ICE Notebook</a></strong>
+                    <span>Код товара: 39299</span>
+                    <strong>13 690<em> руб</em></strong>
+                </div>
+                <div class="order-price">
+                    <div class="number-holder">
+                        <div class="number">
+                            <input class="spinner" name="value" value="12">
+                        </div>
+                        <span class="name">шт</span>
+                    </div>
+                    <strong class="price-summary">10 490<em> руб</em></strong>
+                </div>
+            </div>
+            <div class="cart-order-summary">
+                <div class="cart-order-summary-l">
+                    <a href="#" class="btn btn-green">оформить заказ</a>
+                    <span><a href="#">Продолжить покупки</a></span>
+                </div>
+                <div class="cart-order-summary-r">
+                    <span>К оплате: </span>
+                    <strong class="price-summary">340 100<em> руб</em></strong>
+                </div>
+            </div>
+            <div class="order-sale">
+                <h3>Скидка на аксессуары в комплекте с USB San Disk Cruzer 16GB</h3>
+                <div class="order-sale-gallery gallery">
+                    <div class="order-sale-item">
+                        <div class="order-box">
+                            <div class="img-action">
+                                    <span class="sale-text orange">
+                                        <em>-10%</em>
+                                    </span>
+                                <img class="order-img" src="images/img-order3.jpg" width="91" height="53" alt="">
+                                <strong class="order-title"><a href="#">Ноутбук ASUS X551CA</a></strong>
+                            </div>
+                            <div class="order-details">
+                                <strong>13 690<em> руб</em></strong>
+                                <strong class="old-price"><span>14 710</span><em> руб</em></strong>
+                                <div class="bonuses">Бонус: <span>7 000</span></div>
+                                <a href="#" class="btn btn-blue">купить комплект</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-sale-item">
+                        <div class="order-box">
+                            <div class="img-action">
+                                    <span class="sale-text orange">
+                                        <em>-10%</em>
+                                    </span>
+                                <img class="order-img" src="images/img-order3.jpg" width="91" height="53" alt="">
+                                <strong class="order-title"><a href="#">Ноутбук ASUS X551CA</a></strong>
+                            </div>
+                            <div class="order-details">
+                                <strong>13 690<em> руб</em></strong>
+                                <strong class="old-price"><span>14 710</span><em> руб</em></strong>
+                                <div class="bonuses">Бонус: <span>7 000</span></div>
+                                <a href="#" class="btn btn-blue">купить комплект</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart-order cart-action" id="popup-action">
+        <div class="order order-main">
+            <h2>Корзина</h2>
+            <div class="order-box">
+                <a class="close" href="#">close</a>
+                <img class="order-img" src="images/img-order1.jpg" width="78" height="79" alt="">
+                <div class="order-details">
+                    <strong class="order-title"><a href="#">Флеш USB San Disk Cruzer 16GB (SDCZ36-016G-B35)</a></strong>
+                    <span>Код товара: 39299</span>
+                    <strong>13 690<em> руб</em></strong>
+                    <div class="bonuses">Бонус: <span>7 000</span></div>
+                </div>
+                <div class="order-price">
+                    <div class="number-holder">
+                        <div class="number">
+                            <input class="spinner" name="value" value="12">
+                        </div>
+                        <span class="name">шт</span>
+                    </div>
+                    <strong class="price-summary">10 490<em> руб</em></strong>
+                </div>
+            </div>
+            <div class="order action">
+                <div class="order-box">
+                    <h3><a class="close" href="#">close</a><span>Акционное предложение</span></h3>
+                    <img class="order-img" src="images/img-order1.jpg" width="78" height="79" alt="">
+                    <div class="order-details">
+                        <strong class="order-title"><a href="#">Флеш USB San Disk Cruzer 16GB (SDCZ36-016G-B35)</a></strong>
+                        <span>Код товара: 39299</span>
+                        <strong><b>13 690</b><em> руб</em></strong>
+                        <div class="bonuses">Бонус: <span>7 000</span></div>
+                    </div>
+                    <div class="order-price">
+                        <div class="number-holder">
+                            <div class="number">
+                                <input class="spinner" name="value" value="12">
+                            </div>
+                            <span class="name">компл</span>
+                        </div>
+                        <strong class="price-summary">10 490<em> руб</em></strong>
+                    </div>
+                </div>
+                <div class="order-box">
+                    <div class="img-action">
+                            <span class="sale-text orange">
+                                <em>-10%</em>
+                            </span>
+                        <img class="order-img" src="images/img-order3.jpg" width="91" height="53" alt="">
+                    </div>
+                    <div class="order-details">
+                        <strong class="order-title"><a href="#">Ноутбук ASUS X551CA</a></strong>
+                        <span>Код товара: 39299</span>
+                        <strong>13 690<em> руб</em></strong>
+                        <strong class="old-price"><span>14 710</span><em> руб</em></strong>
+                        <div class="bonuses">Бонус: <span>7 000</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-order-summary">
+                <div class="cart-order-summary-l">
+                    <a href="#" class="btn btn-green">оформить заказ</a>
+                    <span><a href="#">Продолжить покупки</a></span>
+                </div>
+                <div class="cart-order-summary-r">
+                    <span>К оплате: </span>
+                    <strong class="price-summary">
+                        340 100<em> руб</em>
+                        <div class="bonuses">Бонус: <span>7 000</span></div>
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

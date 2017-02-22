@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="robots" content="noindex, nofollow"/>
+    <meta charset="utf-8">
+    <title>Optima</title>
+    <link media="all" rel="stylesheet" href="css/styles.css">
+    <!-- <link media="all" rel="stylesheet" href="css/styles-test.css"> -->
+    <link media="all" rel="stylesheet" href="css/slick.css">
+    <link media="all" rel="stylesheet" href="css/owl.carousel.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic&amp;subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+    <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="js/jquery.main.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/slideBlock.js"></script>
+    <script type="text/javascript" src="js/open-close.js"></script>
+    <script type="text/javascript" src="js/tabs.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="js/select2.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.spinner.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.button.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.accordion.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.mouse.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.slider.js"></script>
+    <script type="text/javascript" src="js/jquery.inputmask.js"></script>
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+<a class="fancybox" href="#check-number">popup check-number</a>
+<br/>
+<a class="fancybox" href="#new-number">popup new-number</a>
+<br/>
+<a class="fancybox" href="#change-password">popup change-password</a>
+<div class="popup-holder">
+    <div id="new-number" class="sign-in">
+        <h2>Ввод нового номера</h2>
+        <form>
+            <label for="mob-tel">Мобильный телефон</label>
+            <div class="select-box tel">
+                <div class="slide-box lang">
+                    <span class="slide-link"><a class="ru" href="#"><img onclick="ru();" src="images/ico-rus.gif" width="32" height="25" alt=""></a></span>
+                    <ul class="slide-list">
+                        <li><a class="ua" href="#"><img onclick="ua();" src="images/ico-ukr.gif" width="32" height="25" alt=""></a></li>
+                    </ul>
+                </div>
+                <input id="mob-tel" type="text" placeholder="+7 (___) ___-__-__">
+                <a class="btn btn-green" href="">сохранить</a>
+            </div>
+        </form>
+    </div>
+    <div id="change-password" class="registration">
+        <h2>Изменение пароля</h2>
+        <p>На Ваш номер отправлено сообщение с sms кодом</p>
+        <form>
+            <label for="code">Код</label>
+            <input id="code" type="text"/>
+            <label for="pass">Пароль</label>
+            <input id="pass" type="password"/>
+            <label for="repead-pass">Повторно пароль</label>
+            <input id="repead-pass" type="password"/>
+            <a class="btn btn-green" href="">Сохранить</a>
+        </form>
+    </div>
+    <div id="check-number" class="recover-password">
+        <h2>Проверка номера</h2>
+        <p>На Ваш номер отправлено сообщение с sms кодом</p>
+        <form>
+            <label for="recover-code">Код</label>
+            <input id="recover-code" type="text"/>
+            <label for="new-pass">Пароль</label>
+            <input id="new-pass" type="password"/>
+            <a class="btn btn-green" href="">изменить номер</a>
+        </form>
+    </div>
+</div>
+</body>
+</html>
